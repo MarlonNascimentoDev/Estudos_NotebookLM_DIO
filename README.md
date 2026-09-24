@@ -106,13 +106,19 @@ Abaixo está documentado o processo de tentativa e erro (*troubleshooting*) até
 Caso você ou outro desenvolvedor queira explorar mais esse caderno no NotebookLM, utilize estes *prompts* já testados e validados. É só copiar e colar:
 
 > 💡 **Prompt 1: Revisão de Código (Code Review)**  
-> *"Analise as fontes e crie um checklist de 5 passos para revisar o código de uma rota de API, focando em legibilidade e tratamento correto de erros HTTP."*
+```text
+Analise as fontes e crie um checklist de 5 passos para revisar o código de uma rota de API, focando em legibilidade e tratamento correto de erros HTTP.
+```
 
 > 💡 **Prompt 2: Explicação Didática (Técnica Feynman)**  
-> *"Explique o Modelo de Maturidade de Richardson como se você estivesse ensinando a um desenvolvedor Júnior, utilizando uma analogia com um restaurante."*
+```text
+"Explique o Modelo de Maturidade de Richardson como se você estivesse ensinando a um desenvolvedor Júnior, utilizando uma analogia com um restaurante."*
+```
 
 > 💡 **Prompt 3: Identificação de Anti-padrões**  
-> *"Quais são os principais 'code smells' (cheiros de código ruim) no design de uma API segundo o guia do Google e os princípios do Clean Code?"*
+```text
+"Quais são os principais 'code smells' (cheiros de código ruim) no design de uma API segundo o guia do Google e os princípios do Clean Code?"*
+```
 
 ---
 
