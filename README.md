@@ -8,6 +8,26 @@ Objetivos de Estudo:
    1. Compreender as melhores práticas: Mapear os princípios fundamentais para o design de APIs RESTful eficientes (como padronização de rotas, status HTTP e versionamento).
    2. Aplicar o Código Limpo: Entender como os conceitos de Clean Code e SOLID se aplicam diretamente no desenvolvimento e na arquitetura de APIs.
    3. Consolidar o conhecimento com IA: Utilizar o NotebookLM para processar fontes de referência, extrair resumos valiosos e criar um miniguia de consulta rápida para o dia a dia do desenvolvimento.
+
+# 🧠 Engenharia de Prompts e "Cicatrizes"
+
+Nesta seção, documento o processo de tentativa e erro (troubleshooting) até encontrar os prompts ideais para extrair o melhor conteúdo do NotebookLM.
+
+**Teste 1:** Prompt Inicial (A Primeira tentativa)
+   **Prompt utilizado:** "Resuma o que é Clean Code e como fazer uma boa API REST com base nas fontes."O que a IA entregou: Um texto corrido, muito teórico e genérico, parecendo um artigo da Wikipédia. Ela separou os assuntos e não conectou o "Código Limpo" com o "Design da API".
+   
+   **A Cicatriz/Problema:** Faltou direcionamento e formatação. A resposta não gerou valor prático para um desenvolvedor.
+
+**Teste 2:** Prompt Estruturado (Aplicação de alguns recursos presente nas fontes)
+   **Prompt utilizado:** "Com base nas fontes anexadas, liste as boas práticas para criar uma API RESTful. Mostre como o Clean Code ajuda nisso. Dê exemplos de rotas."O que a IA entregou: A IA trouxe os exemplos de rotas e conectou bem os assuntos. Mencionou os vídeos da Rocketseat e do Filipe Deschamps.
+   
+   **A Cicatriz/Problema:** As respostas vieram em blocos de texto muito grandes. Faltou utilizar melhor os conceitos mais técnicos, como o Modelo de Maturidade de Richardson.
+
+**Teste 3:** O Prompt Engenheirado (Extração total das informações presente nas fontes)
+   **Prompt utilizado:**
+   "Atue como um Arquiteto de Software Sênior. Analise as fontes fornecidas (especialmente o Google API Design Guide, o artigo do Martin Fowler e o vídeo da Rocketseat). Crie um guia direto e estruturado em Markdown sobre como aplicar Clean Code no Design de APIs RESTful. Sua resposta DEVE conter: 1. Uma tabela comparativa de Endpoints Ruins (acoplados/verbosos) vs Endpoints Limpos (orientados a recursos). 2. A relação entre o Modelo de Maturidade de Richardson e a legibilidade da API. 3. Cite a fonte de onde tirou cada afirmação."
+   
+   O que a IA entregou: Um material de altíssima qualidade. Ela gerou a tabela comparativa solicitada, usou a formatação Markdown perfeitamente, relacionou a semântica dos verbos HTTP com a clareza do código e citou os documentos de origem, entregando um mini-artigo digno de documentação técnica sênior.
    
 # 📚 Curadoria de Fontes
 
