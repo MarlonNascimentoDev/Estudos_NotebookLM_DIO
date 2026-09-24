@@ -1,9 +1,9 @@
 <div align="center">
   <h1>📓 Caderno Temático: Design de APIs e Clean Code</h1>
   <p>
-    <img src="[https://img.shields.io/badge/Google-NotebookLM-4285F4?style=for-the-badge&logo=google&logoColor=white](https://img.shields.io/badge/Google-NotebookLM-4285F4?style=for-the-badge&logo=google&logoColor=white)" alt="NotebookLM Badge">
-    <img src="[https://img.shields.io/badge/Architecture-RESTful%20API-FF7139?style=for-the-badge&logo=postman&logoColor=white](https://img.shields.io/badge/Architecture-RESTful%20API-FF7139?style=for-the-badge&logo=postman&logoColor=white)" alt="REST API">
-    <img src="[https://img.shields.io/badge/Code-Clean%20Code-00C7B7?style=for-the-badge&logo=clean-code&logoColor=white](https://img.shields.io/badge/Code-Clean%20Code-00C7B7?style=for-the-badge&logo=clean-code&logoColor=white)" alt="Clean Code">
+    <img src="https://img.shields.io/badge/Google-NotebookLM-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="NotebookLM Badge">
+    <img src="https://img.shields.io/badge/Architecture-RESTful%20API-FF7139?style=for-the-badge&logo=postman&logoColor=white" alt="REST API">
+    <img src="https://img.shields.io/badge/Code-Clean%20Code-00C7B7?style=for-the-badge&logo=clean-code&logoColor=white" alt="Clean Code">
   </p>
   <p>
     <em>Estudo prático utilizando Inteligência Artificial para destrinchar e resumir as melhores práticas de desenvolvimento, arquitetura de APIs e Código Limpo.</em>
