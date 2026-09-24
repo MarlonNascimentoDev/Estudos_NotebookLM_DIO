@@ -1,5 +1,9 @@
 # Estudos_NotebookLM_DIO
 
+# 📓 Meu Caderno Temático: Design de APIs e Clean Code
+
+🔗 [Clique aqui para acessar meu caderno público no NotebookLM](https://notebook.google.com/notebook/0b97fccc-1d4e-4a22-b218-06c761423dc0?authuser=1)
+
 # 📝Tema Escolhido: Design de APIs e Clean Code (Código Limpo).
 **Contexto:**
 No ecossistema de desenvolvimento de software atual, as APIs (Application Programming Interfaces) são a espinha dorsal da comunicação entre sistemas, microsserviços e aplicações frontend (como web e mobile). No entanto, não basta apenas que uma API funcione; ela precisa ser intuitiva, segura e escalável. Aliado a isso, os princípios de Clean Code garantem que a base de código por trás dessas APIs seja legível, testável e de fácil manutenção a longo prazo, reduzindo o débito técnico.
