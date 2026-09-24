@@ -14,20 +14,63 @@ Objetivos de Estudo:
 Nesta seção, documento o processo de tentativa e erro (troubleshooting) até encontrar os prompts ideais para extrair o melhor conteúdo do NotebookLM.
 
 **Teste 1:** Prompt Inicial (A Primeira tentativa)
+   
    **Prompt utilizado:** "Resuma o que é Clean Code e como fazer uma boa API REST com base nas fontes."O que a IA entregou: Um texto corrido, muito teórico e genérico, parecendo um artigo da Wikipédia. Ela separou os assuntos e não conectou o "Código Limpo" com o "Design da API".
    
    **A Cicatriz/Problema:** Faltou direcionamento e formatação. A resposta não gerou valor prático para um desenvolvedor.
 
 **Teste 2:** Prompt Estruturado (Aplicação de alguns recursos presente nas fontes)
+   
    **Prompt utilizado:** "Com base nas fontes anexadas, liste as boas práticas para criar uma API RESTful. Mostre como o Clean Code ajuda nisso. Dê exemplos de rotas."O que a IA entregou: A IA trouxe os exemplos de rotas e conectou bem os assuntos. Mencionou os vídeos da Rocketseat e do Filipe Deschamps.
    
    **A Cicatriz/Problema:** As respostas vieram em blocos de texto muito grandes. Faltou utilizar melhor os conceitos mais técnicos, como o Modelo de Maturidade de Richardson.
 
 **Teste 3:** O Prompt Engenheirado (Extração total das informações presente nas fontes)
+   
    **Prompt utilizado:**
    "Atue como um Arquiteto de Software Sênior. Analise as fontes fornecidas (especialmente o Google API Design Guide, o artigo do Martin Fowler e o vídeo da Rocketseat). Crie um guia direto e estruturado em Markdown sobre como aplicar Clean Code no Design de APIs RESTful. Sua resposta DEVE conter: 1. Uma tabela comparativa de Endpoints Ruins (acoplados/verbosos) vs Endpoints Limpos (orientados a recursos). 2. A relação entre o Modelo de Maturidade de Richardson e a legibilidade da API. 3. Cite a fonte de onde tirou cada afirmação."
    
    O que a IA entregou: Um material de altíssima qualidade. Ela gerou a tabela comparativa solicitada, usou a formatação Markdown perfeitamente, relacionou a semântica dos verbos HTTP com a clareza do código e citou os documentos de origem, entregando um mini-artigo digno de documentação técnica sênior.
+
+# 🎓 Miniguia de Estudo: Design de APIs e Clean Code
+
+Após processar as fontes e refinar os prompts, este é o guia consolidado gerado a partir do NotebookLM:
+
+**1. Resumo Estruturado**
+
+O Casamento entre Código Limpo e APIs RESTful
+
+   **Nomenclatura Importa (Clean Code):** Assim como variáveis e funções devem ter nomes claros e revelar sua intenção (como defende Filipe Deschamps e o Clean Code), os Endpoints de uma API devem ser orientados a recursos (substantivos) e não a ações (verbos).
+
+   ❌ Ruim: POST /criarUsuario ou GET /pegarClientes
+
+   ✅ Bom: POST /usuarios ou GET /clientes
+
+   **Deixe o HTTP fazer o trabalho dele:** A MDN e o Guia do Google reforçam que os verbos HTTP (GET, POST, PUT, PATCH, DELETE) já indicam a ação. Usá-los corretamente reduz a necessidade de criar rotas verbosas e confusas.
+
+   **Maturidade da API:** Segundo o Modelo de Maturidade de Richardson (Martin Fowler), uma API atinge seu nível mais alto (Nível 3) quando utiliza HATEOAS, ou seja, quando a própria resposta da API fornece os links para as próximas ações possíveis, tornando-a autoexplicativa e independente.
+
+**2. Glossário de Conceitos**
+
+   **API RESTful**: Uma API que respeita as restrições arquiteturais do REST, utilizando corretamente os métodos HTTP, sendo stateless (sem estado) e orientada a recursos.
+
+   **Resource-Oriented Design (Design Orientado a Recursos):** Padrão de design onde a API é modelada em torno de entidades de negócios (ex: "pedidos", "clientes") em vez de operações.
+
+   **HATEOAS (Hypermedia as the Engine of Application State):** Conceito onde a API retorna, além dos dados, links navegáveis informando ao cliente o que ele pode fazer a seguir com aquele recurso.
+
+   **Status Codes (Códigos de Status HTTP):** Respostas padronizadas do servidor (ex: 200 OK, 201 Created, 404 Not Found). Em uma API limpa, você nunca deve retornar um erro genérico 500 quando a culpa foi do cliente (400 Bad Request).
+
+   **Débito Técnico:** O custo implícito de escolher uma solução fácil e rápida agora, em vez da abordagem melhor (Clean Code), que exigirá refatoração no futuro.
+
+**3. Prompts Reutilizáveis (Para futuras revisões)**
+
+Caso você ou outro desenvolvedor queira explorar mais esse caderno no NotebookLM, utilize estes prompts testados:
+
+   💡 "Analise as fontes e crie um checklist de 5 passos para revisar o código de uma rota de API, focando em legibilidade e tratamento correto de erros HTTP."
+
+   💡 "Explique o Modelo de Maturidade de Richardson como se você estivesse ensinando a um desenvolvedor Júnior, utilizando uma analogia com um restaurante."
+
+   💡 "Quais são os principais 'code smells' (cheiros de código ruim) no design de uma API segundo o guia do Google e os princípios do Clean Code?"
    
 # 📚 Curadoria de Fontes
 
